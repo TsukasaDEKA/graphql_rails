@@ -7,7 +7,7 @@ module Types
     field :test_field, String, null: false,
       description: "An example field added by the generator"
     def test_field
-      "Hello World!"
+      "Hello World! from QueryType"
     end
     field :all_posts, [PostType], null: false
     def all_posts()
