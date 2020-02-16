@@ -5,7 +5,13 @@
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "4.2.2"
+    "@rails/webpacker": "4.2.2",
+    "apollo-boost": "^0.4.7",
+    "apollo-client": "^2.6.8",
+    "graphql": "^14.6.0",
+    "graphql-tag": "^2.10.3",
+    "vue-apollo": "^3.0.3",
+    "vue-router": "^3.1.5"
   },
   "version": "0.1.0",
   "devDependencies": {
