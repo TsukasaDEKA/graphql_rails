@@ -60,3 +60,6 @@ gem 'graphiql-rails'
 gem 'graphiql-rails', group: :development
 
 gem 'rack-cors'
+
+## devise
+gem 'devise'

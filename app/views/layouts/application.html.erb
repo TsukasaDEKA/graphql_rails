@@ -7,6 +7,12 @@
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_pack_tag 'application' %>
+    <% if !user_signed_in? then%>
+      <a href="/users/sign_in" class="bm-admin-todo">利用組織ログイン</a>
+    <% end %>
+    <% if user_signed_in? then%>
+      <%= button_to "ログアウト", destroy_user_session_path, method: :delete%>
+    <% end %>
   </head>
 
   <body>
