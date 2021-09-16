@@ -24,5 +24,14 @@ module Types
       posts = posts.offset(offset) unless offset.nil?
       posts
     end
+
+    field :post, PostType, null: false do
+      argument :id, ID, required: true
+    end
+    def post(id: nil)
+      post = Post.find_by(id: id)
+      raise GraphQL::ExecutionError.new("Couldn't find Post", extensions: { code: 'なんかエラー' }) unless post.present?
+      post
+    end
   end
 end
